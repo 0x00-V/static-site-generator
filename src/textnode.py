@@ -21,7 +21,6 @@ class TextNode():
     def __repr__(self):
         return f"TextNode({self.text}, {self.text_type.value}, {self.url})"
     
-
 def text_node_to_html_node(text_node):
     match text_node.text_type:
         case TextType.TEXT:
@@ -39,7 +38,6 @@ def text_node_to_html_node(text_node):
         case _:
             raise ValueError("Invalid TextType!")
         
-
 def split_nodes_delimiter(old_nodes, delimiter, text_type):
     new_nodes = []
     for node in old_nodes:
@@ -62,7 +60,6 @@ def extract_markdown_images(text):
 def extract_markdown_links(text):
     matches = re.findall(r"(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)", text)
     return matches
-
 
 def split_nodes_image(old_nodes):
     new_nodes = []
@@ -126,7 +123,6 @@ def split_nodes_link(old_nodes):
             new_nodes.append(TextNode(curr_txt, TextType.TEXT))
     return new_nodes
 
-
 def text_to_textnodes(text):
     nodes = [TextNode(text, TextType.TEXT)]
     
@@ -139,3 +135,16 @@ def text_to_textnodes(text):
     
     return nodes
     
+def markdown_to_blocks(markdown):
+    res = []
+
+    for block in markdown.split("\n\n"):
+        if not block.strip():
+            continue
+            
+        clean = ""
+        for l in block.strip().split("\n"):
+            clean += l.strip() + "\n"
+    
+        res.append(clean.strip())
+    return res
