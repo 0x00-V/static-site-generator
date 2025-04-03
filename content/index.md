@@ -9,9 +9,9 @@ Here's the deal, **I am braindead**.
 
 ## Blog posts
 
-- [Example 1](/blog/glorfindel)
-- [Example 2](/blog/tom)
-- [Example3](/blog/majesty)
+- [Example 1](/blog/something)
+- [Example 2](/blog/aboutme)
+- [Example3](/blog/goaway)
 
 ## Reasons I like Coding
 
@@ -42,4 +42,4 @@ Here's what `brainfuck` looks like (the perfect coding language):
 
 Want to get in touch? [No! Fuck off!](/contact).
 
-This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) made by Daniel Thomas
+This site was generated with a custom-built [static site generator](https://www.urmother) made by Daniel Thomas
