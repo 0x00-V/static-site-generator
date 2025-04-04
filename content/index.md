@@ -1,46 +1,55 @@
-# Tolkien Fan Club
+# 💻 #0x00v's Static Site Generator
 
-![JRR Tolkien sitting](/images/tolkien.png)
+![something](/images/dank.png)
 
-Here's the deal, **I like Tolkien**.
+Here's the deal, **I like coding**.
 
-> "I am in fact a Hobbit in all but size."
+> "I like tech"
 >
-> -- J.R.R. Tolkien
+> -- Some random programmer/cybersecurity enjoyer
 
-## Blog posts
+## 📝 **Blog Posts**  
 
-- [Why Glorfindel is More Impressive than Legolas](/blog/glorfindel)
-- [Why Tom Bombadil Was a Mistake](/blog/tom)
-- [The Unparalleled Majesty of "The Lord of the Rings"](/blog/majesty)
+- [Example 1 - Debugging Like a Hacker](/blog/e1)
+- [Example 2 - How to Optimize Your Code with Just 1 Line](/blog/e2)
+- [Example 3 - Memory Leaks: A Hacker's Worst Enemy](/blog/e3)
 
-## Reasons I like Tolkien
+## 💾 **Reasons I Like C++**  
 
-- You can spend years studying the legendarium and still not understand its depths
-- It can be enjoyed by children and adults alike
-- Disney _didn't ruin it_ (okay, but Amazon might have)
-- It created an entirely new genre of fantasy
+- You can spend **years** mastering it and still feel like a newbie when you see `undefined behavior`.
+- It can be **fast** and **elegant** (if you actually manage to write it that way).
+- **Stack Overflow** didn’t ruin it (but some of the people on there might have).
+- It created a world of **pointers**, **memory management**, and **headaches** that only real hackers appreciate.
 
-## My favorite characters (in order)
+## 💻 **My Favorite C++ Features (in order of awesomeness)**
 
-1. Gandalf
-2. Bilbo
-3. Sam
-4. Glorfindel
-5. Galadriel
-6. Elrond
-7. Thorin
-8. Sauron
-9. Aragorn
+1. **Pointers** - Because why not give the computer a map to everything, even if you might dereference it wrong?
+2. **Templates** - Metaprogramming at its finest—because why write a function when you can write a function that writes a function?
+3. **STL** - The Standard Template Library: Saving lives one `vector` at a time.
+4. **RAII** - Resource Acquisition Is Initialization—because automatic resource cleanup is **beautiful**.
+5. **Overloading** - You can’t overload my love for function overloading.
+6. **Concurrency** - Threads and mutexes: multithreading like a true hacker.
+7. **Memory Management** - No garbage collector to save you. It’s just you and your `malloc`, `free`, and 10000 potential crashes.
+8. **C++11/14/17/20** - Every new version adds something cool, but also something that will break your code unexpectedly.
+9. **Macros** - The `#define` life—because who needs readability, right?
 
-Here's what `elflang` looks like (the perfect coding language):
+## 🖥 **C++ Sample:**
 
-```
-func main(){
-    fmt.Println("Aiya, Ambar!")
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hacker Mode Activated..." << std::endl;
+    while(true) {
+        std::cout << "Hack the planet!" << std::endl;
+    }
+    return 0;
 }
 ```
 
-Want to get in touch? [Contact me here](/contact).
+## 📨 **Want to Get in Touch?**  
+[Contact me here](/contact).  
+I might be in the middle of patching a security hole right now... or just playing with pointers.
 
-This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) from the course on [Boot.dev](https://www.boot.dev).
+This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) made by 0x00-V(AKA ZeroVelocity/Daniel Thomas)
+
