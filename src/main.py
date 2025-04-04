@@ -1,5 +1,5 @@
 from textnode import *
-import shutil, os
+import shutil, os, sys
 
 def copytodst(static, public):
     if os.path.exists(public):
@@ -26,7 +26,7 @@ def extract_title(md):
     raise Exception("No h1 header found.")
 
 
-def generate_page(src, template, dst):
+def generate_page(src, template, dst, basepath):
     print(f"Generating page: {src} -> {dst} | Using: {template}")
 
     with open(src, "r") as md_file:
@@ -40,13 +40,15 @@ def generate_page(src, template, dst):
 
     html = template_content.replace("{{ Title }}", title)
     html = html.replace("{{ Content }}", html_content)
+    html = html.replace('href="/', f'href="{basepath}')
+    html = html.replace('src="/', f'src="{basepath}')
 
 
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     with open(dst, "w") as dst_file:
         dst_file.write(html)
 
-def generate_pages_recursive(src, template, dst):
+def generate_pages_recursive(src, template, dst, basepath):
     if not os.path.exists(src):
         raise Exception("Location doesn't exist!")
     os.makedirs(dst, exist_ok=True)
@@ -57,9 +59,9 @@ def generate_pages_recursive(src, template, dst):
         if os.path.isfile(src_path):
             if src_path.endswith(".md"):
                 dst_path = dst_path.replace(".md", ".html")
-                generate_page(src_path, template, dst_path)
+                generate_page(src_path, template, dst_path, basepath)
         else:
-            generate_pages_recursive(src_path, template, dst_path)
+            generate_pages_recursive(src_path, template, dst_path, basepath)
 
 #
 
@@ -67,5 +69,9 @@ def generate_pages_recursive(src, template, dst):
 
 
 if __name__ == "__main__":
-    copytodst("./static", "./public")
-    generate_pages_recursive("./content", "./template.html", "./public")
+    if len(sys.argv) > 1:
+        basepath = sys.argv[1]
+    else:
+        basepath = "/"
+    copytodst("./static", "./docs")
+    generate_pages_recursive("./content", "./template.html", "./docs", basepath)
