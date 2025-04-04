@@ -49,7 +49,6 @@ int main() {
 
 ## 📨 **Want to Get in Touch?**  
 [Contact me here](/contact).  
-I might be in the middle of patching a security hole right now... or just playing with pointers.
 
-This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) made by 0x00-V(AKA ZeroVelocity/Daniel Thomas)
+This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) made by 0x00-V(AKA ZeroVelocity/Dan)
 
