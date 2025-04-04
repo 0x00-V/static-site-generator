@@ -40,6 +40,8 @@ def generate_page(src, template, dst, basepath):
     
     html = template_content.replace("{{ Title }}", title)
     html = html.replace("{{ Content }}", html_content)
+    
+    basepath = basepath.rstrip('/')
     html = html.replace('href="/', f'href="{basepath}/')
     html = html.replace('src="/', f'src="{basepath}/')
 
