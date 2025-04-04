@@ -50,5 +50,5 @@ int main() {
 ## 📨 **Want to Get in Touch?**  
 [Contact me here](/contact).  
 
-This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) made by 0x00-V(AKA ZeroVelocity/Dan)
+This site was generated with a custom-built [static site generator](https://en.wikipedia.org/wiki/Static_site_generator) made by 0x00-V(AKA ZeroVelocity/Dan)
 
