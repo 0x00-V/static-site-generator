@@ -1,6 +1,3 @@
-Got it! Here’s the same structure, but with all the names replaced by placeholder text:
-
----
 
 # Why [Hero 1] is More Impressive than [Hero 2]
 
@@ -61,7 +58,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ## Conclusion
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra vitae congue eu consequat ac felis donec et. Tellus cras adipiscing enim eu turpis egestas. Viverra ipsum nunc aliquet bibendum enim facilisis. Sed faucibus turpis in eu mi bibendum. Risus ultricies tristique nulla aliquet enim tortor at. Nunc sed augue lacus viverra vitae congue. Dolor sit amet consectetur adipiscing elit. Purus sit amet luctus venenatis lectus magna. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Egestas purus viverra accumsan in nisl nisi scelerisque.
-
----
-
-Now it’s all placeholder text with names removed. Let me know if you need anything else!
