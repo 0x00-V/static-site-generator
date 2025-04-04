@@ -1,45 +1,46 @@
-# Daniel's SSG
+# Tolkien Fan Club
 
-![Some Dank Image](/images/tolkien.png)
+![JRR Tolkien sitting](/images/tolkien.png)
 
-Here's the deal, **I am braindead**.
+Here's the deal, **I like Tolkien**.
 
-> "Daniel's static site generator."
-
+> "I am in fact a Hobbit in all but size."
+>
+> -- J.R.R. Tolkien
 
 ## Blog posts
 
-- [Example 1](/blog/something)
-- [Example 2](/blog/aboutme)
-- [Example3](/blog/goaway)
+- [Why Glorfindel is More Impressive than Legolas](/blog/glorfindel)
+- [Why Tom Bombadil Was a Mistake](/blog/tom)
+- [The Unparalleled Majesty of "The Lord of the Rings"](/blog/majesty)
 
-## Reasons I like Coding
+## Reasons I like Tolkien
 
-- Sigma
-- Sigma
-- Sigma
-- Sigma
+- You can spend years studying the legendarium and still not understand its depths
+- It can be enjoyed by children and adults alike
+- Disney _didn't ruin it_ (okay, but Amazon might have)
+- It created an entirely new genre of fantasy
 
-## My favorite words (in order)
+## My favorite characters (in order)
 
-1. Sigma
-2. Sigma
-3. Sigma
-4. Sigma
-5. Sigma
-6. Sigma
-7. Sigma
-8. Sigma
-9. Sigma
+1. Gandalf
+2. Bilbo
+3. Sam
+4. Glorfindel
+5. Galadriel
+6. Elrond
+7. Thorin
+8. Sauron
+9. Aragorn
 
-Here's what `brainfuck` looks like (the perfect coding language):
+Here's what `elflang` looks like (the perfect coding language):
 
 ```
->+++++++++[<++++++++>-]<.>+++++++[<++++>-]<+.+++++++..+++.[-]
->++++++++[<++++>-] <.>+++++++++++[<++++++++>-]<-.--------.+++
-.------.--------.[-]>++++++++[<++++>- ]<+.[-]++++++++++.
+func main(){
+    fmt.Println("Aiya, Ambar!")
+}
 ```
 
-Want to get in touch? [No! Fuck off!](/contact).
+Want to get in touch? [Contact me here](/contact).
 
-This site was generated with a custom-built [static site generator](https://www.urmother) made by Daniel Thomas
+This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) from the course on [Boot.dev](https://www.boot.dev).

@@ -45,8 +45,27 @@ def generate_page(src, template, dst):
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     with open(dst, "w") as dst_file:
         dst_file.write(html)
-    
+
+def generate_pages_recursive(src, template, dst):
+    if not os.path.exists(src):
+        raise Exception("Location doesn't exist!")
+    os.makedirs(dst, exist_ok=True)
+    items = os.listdir(src)
+    for item in items:
+        src_path = os.path.join(src, item)
+        dst_path = os.path.join(dst, item)
+        if os.path.isfile(src_path):
+            if src_path.endswith(".md"):
+                dst_path = dst_path.replace(".md", ".html")
+                generate_page(src_path, template, dst_path)
+        else:
+            generate_pages_recursive(src_path, template, dst_path)
+
+#
+
+
+
 
 if __name__ == "__main__":
     copytodst("./static", "./public")
-    generate_page("./content/index.md", "./template.html", "./public/index.html")
+    generate_pages_recursive("./content", "./template.html", "./public")
